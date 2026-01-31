@@ -1,0 +1,5 @@
+node_modules/
+.vscode/
+
+# Build Output
+public/styles.css

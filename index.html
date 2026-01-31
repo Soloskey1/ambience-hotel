@@ -1,0 +1,522 @@
+<!DOcTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambience - Elevate Your Stay</title>
+    <link href="./public/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+</head>
+<body class="font-sans text-gray-800 bg-white/50 antialiased">
+  <!-- === HEADER ==== -->
+   <section class="relative flex min-h-screen w-full flex-col bg-stone-900 font-sans antialiased">
+  
+    <div class="absolute inset-0 z-0">
+      <img src="asset/hotel.png" alt="Hotel Interior" class="h-full w-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80"></div>
+    </div>
+  
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="sticky top-0 z-50 flex w-full items-center justify-between px-6 py-5 backdrop-blur-md lg:px-16">
+      <div class="group cursor-pointer">
+        <h1 class="text-2xl font-bold tracking-[0.2em] text-white">AMBIENCE</h1>
+        <p class="text-[10px] uppercase tracking-widest text-amber-500">Elevate Your Stay</p>
+      </div>
+  
+       <!-- === Nav List === -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide text-white">
+        <a href="#" class="hover:text-amber-500 transition-colors">Programmes</a>
+        <a href="#" class="hover:text-amber-500 transition-colors">About Us</a>
+        <a href="#" class="rounded-full border border-white/40 bg-white/5 px-6 py-2.5 transition-all hover:bg-amber-500 hover:text-white">
+          Explore
+        </a>
+      </div>
+
+      <!--Hamburger Button / Icon -->
+      <button id="menu-btn" class="md:hidden z-50 block focus:outline-none group p-2">
+        <div id="hamburger-top" class="w-8 h-0.5 bg-gray-300 mb-2 transition-all duration-300"></div>
+        <div id="hamburger-middle" class="w-8 h-0.5 bg-gray-300 mb-2 transition-all duration-300"></div>
+        <div id="hamburger-bottom" class="w-8 h-0.5 bg-gray-300 transition-all duration-300"></div>
+    </button>
+    </nav>
+  
+    <div class="relative z-25 flex flex-1 flex-col items-center justify-center px-4 text-center">
+      <h2 class="mb-4 max-w-5xl text-6xl md:text-9xl font-serif italic font-bold text-amber-500 tracking-tight">
+        Elevate Your Stay!
+      </h2>
+      
+      <p class="mb-12 max-w-xl text-lg font-light leading-relaxed text-stone-200 md:text-xl">
+        Experience unmatched luxury and modern comfort in the heart of the city.
+      </p>
+  
+      <a href="#booking-section" class="group relative overflow-hidden rounded-full bg-amber-500 px-10 py-4 font-bold uppercase tracking-widest text-stone-950 transition-all hover:bg-amber-400 active:scale-95 shadow-2xl">
+        Book Your Stay
+      </a>
+    </div>
+  </section>
+
+   <!-- Nav list linked to Button -->
+   <nav id="mobile-menu" class="fixed inset-0 z-[40] flex flex-col items-center justify-center bg-zinc-900 text-white w-full h-screen transform -translate-y-full transition-transform duration-500 ease-in-out">
+    <ul class="flex flex-col items-center space-y-10 text-3xl font-bold tracking-wide">
+        <li><a href="#" class="nav-link hover:text-amber-500 transition-colors">Home</a></li>
+        <li><a href="#about-us" class="nav-link hover:text-amber-500 transition-colors">About Us</a></li>
+        <li><a href="#footer" class="nav-link hover:text-amber-500 transition-colors">Programmes</a></li>
+        <li><a href="#gallery" class="nav-link hover:text-amber-500 transition-colors">Gallery</a></li>
+        <li><a href="#booking-section" class="nav-link hover:text-amber-500 transition-colors text-amber-500">Make Reservation</a></li>
+    </ul>
+</nav>
+
+  <div class="h-20 bg-zinc-900"></div>
+
+   <!-- ==== WHY CHOOSE US === -->
+   <section class="min-h-screen py-24 p-6 bg-slate-50" id="about-us">
+     
+    <div class="max-w-4xl mx-auto">
+    <h2 class="w-full text-4xl md:text-5xl font-extrabold text-center text-hotel-expresso mb-12"> Why Choose Ambience Hotel?</h2>
+
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- ==== CARD 1 ==== -->
+        <div class="flex flex-col h-80  p-10 items-center justify-center border border-slate-200 bg-white roubded-2xl
+               shadow-xl shadow-amber-700/10 transition-all hover:scale[1.02] hover:shadow-2xl">
+         
+          <!-- Icon here -->
+          <div class="w-30 h-30 mb-6 rounded-full bg-hotel-gold flex items-center justify-center text-4xl shadow-md text-hotel-expresso">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+
+           <h3 class="text-lg font-bold mb-4 uppercase tracking-wider text-stone-800">Smart Mood Tech</h3>
+           <p class="text-gray-700 text-center">Personalize your stay with AI-driven lighting and climate control to your biological clock.</p>
+        </div>
+
+        <!-- ==== CARD 2 ==== -->
+        <div class="flex flex-col h-80  p-8 items-center justify-center border border-slate-200 bg-white roubded-2xl
+        shadow-xl shadow-amber-700/10 transition-all hover:scale[1.02] hover:shadow-2xl">
+
+        <!-- Icon here -->
+        <div class="w-30 h-30 mb-6 rounded-full bg-hotel-gold flex items-center justify-center text-4xl shadow-md text-hotel-expresso">
+          <i class="fa-solid fa-bell-concierge"></i>
+        </div>
+
+         <h3 class="text-lg font-bold mb-4 uppercase tracking-wider text-stone-800">Digital Concierge</h3>
+          <p class="text-gray-700 text-center">Skip the lobby. Book  fine dining, spa treatments, or transport istantly from your own device.</p>
+        </div> 
+
+        <!-- ==== CARD 3 ==== -->
+        <div class="flex flex-col h-80  p-8 items-center justify-center border border-slate-200 bg-white roubded-2xl
+        shadow-xl shadow-amber-700/10 transition-all hover:scale[1.02] hover:shadow-2xl">
+
+        
+        <!-- Icon here -->
+        <div class="w-30 h-30 mb-6 rounded-full bg-hotel-gold flex items-center justify-center text-4xl shadow-md text-hotel-expresso">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+         <h3 class="text-lg font-bold mb-4 uppercase tracking-wider text-stone-800">Eco-conscious Luxury</h3>
+         <p class="text-gray-700 text-center">Experience world-class comfort with zero-carbon footprints and locally sourced amenities.</p>
+       </div>
+
+       <!-- ==== CARD 4 ==== -->
+      <div class="flex flex-col h-80  p-8 items-center justify-center border border-slate-200 bg-white roubded-2xl
+      shadow-xl shadow-amber-700/10 transition-all hover:scale[1.02] hover:shadow-2xl">
+      
+      
+       <!-- Icon here -->
+        <div class="w-30 h-30 mb-6 rounded-full bg-hotel-gold flex items-center justify-center text-4xl shadow-md text-hotel-expresso">
+          <i class="fa-solid fa-spa"></i>
+        </div>
+      <h3 class="text-lg font-bold mb-4 uppercase tracking-wider text-stone-800">Wellness Soundscapes</h3>
+      <p class="text-gray-700 text-center">Retreat into acoustic perfection with curated in-room audio environments and deep relaxation.</p>
+    </div>
+
+
+    </div>
+    </div>
+   </section>  
+
+    <!-- == ABOUT US === -->
+    <section class="mx-auto py-24 px-6 md:px-20 lg:px-32 bg-yellow-100">
+      <h2 class=" text-4xl md:text-5xl font-extrabold text-center text-hotel-expresso mb-8 tracking-tight"> Our Story </h2>
+
+      <div class="max-w-3xl mx-auto  space-y-6 text-gray-600 leadning-relaxed text-lg text-left">
+        <p class="mb-4">
+          Ambience Hotel founded in 1999 by <span class="font-semibold text-zinc-800">Dr. Fred Jason</span> , is a five-star hotel, located at the middle of the  island. Ambience stands as the most attractive, welcoming palace in town.
+          Over the decades, it has blossmed into the most attractive and welcoming place in town.
+        </p>
+        <p>
+          In 2005, it was honored with an award for the <span class="text-amber-700 font-medium italic"> most soothing, eco-friendly hotel</span> in Lagos state.
+          Our unique onsite museum offers quality that atrracts local and international guests, blending rich history and modern luxury.
+        </p>
+      </div>
+    </section>
+
+    <!-- == PHOTO GALLERY == -->
+     <section id="gallery" class="mx-auto py-24 px-6 md:px-20 lg:px-32 bg-white text-center">
+
+      <div class="flex flex-col mb-4 justify-center items-center">
+      <h2 class=" text-4xl md:text-5xl font-extrabold text-center text-hotel-expresso mb-2 tracking-tight"> Experience Unrivaled Luxury </h2>
+      <p class=" text-lg md:text-xl mb-12  text-gray-700 mx-auto max-w-3xl">Experience our premium hotel complex. From serence wellness
+        to world-classclinary journey. Dscover the essence of our hospitality. 
+      </p>
+    </div>
+
+      <!-- Image Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-[600px] mt-0">
+        <div class="col-span-2 sm:col-span-1 md:col-span-2 h-full">
+            <a href="asset/1769752359513.png" class="group relative flex flex-col overflow-hidden rounded-2xl h-full">
+                <img src="asset/1769752359513.png" alt="Luxury Suite" class="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent"></div>
+                <div class="relative mt-auto p-6">
+                    <span class="text-sm uppercase tracking-widest text-white/80 mb-2 block">Stay</span>
+                    <h3 class="text-2xl font-serif font-medium text-white md:text-3xl">Suites & Rooms</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-span-2 sm:col-span-1 md:col-span-2 flex flex-col gap-4">
+            <a href="/dining" class="group relative flex flex-col overflow-hidden rounded-2xl flex-1">
+                <img src="asset/hotel.png" alt="Fine Dining" class="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent"></div>
+                <div class="relative mt-auto p-6">
+                    <span class="text-sm uppercase tracking-widest text-white/80 mb-2 block">Taste</span>
+                    <h3 class="text-2xl font-serif font-medium text-white">Fine Dining Lounge</h3>
+                </div>
+            </a>
+            
+            <div class="grid gap-4 grid-cols-2 flex-1">
+                <a href="/lounge" class="group relative flex flex-col overflow-hidden rounded-2xl">
+                    <img src="asset/bar.png" alt="Lounge" class="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent"></div>
+                    <h3 class="relative mt-auto p-4 text-xl font-serif font-medium text-white">The Bar</h3>
+                </a>
+                <a href="/events" class="group relative flex flex-col overflow-hidden rounded-2xl">
+                    <img src="asset/event.png" alt="Events" class="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent"></div>
+                    <h3 class="relative mt-auto p-4 text-xl font-serif font-medium text-white">Events</h3>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-span-2 sm:col-span-1 md:col-span-1 h-full">
+            <a href="/spa" class="group relative flex flex-col overflow-hidden rounded-2xl h-full">
+                <img src="asset/spa.png" alt="Spa" class="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/20 to-transparent"></div>
+                <div class="relative mt-auto p-6">
+                    <span class="text-sm uppercase tracking-widest text-white/80 mb-2 block">Relax</span>
+                    <h3 class="text-2xl font-serif font-medium text-white">Wellness</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+      
+     </section>
+
+     <!-- Hotel Booking Section -->
+<section class="relative max-w-7xl mx-auto px-4 py-16" id="booking-section">
+
+  <!-- Header -->
+  <div class="text-center mb-12">
+    <h2 class=" text-4xl md:text-5xl font-extrabold text-center text-hotel-expresso mb-3 tracking-tight"> Book Your Stay </h2>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+      Experience comfort and luxury. Fill out the form below to reserve your room.
+    </p>
+  </div>
+
+  <!-- Container -->
+  <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+    <div class="md:flex">
+
+      <!-- Left Info -->
+      <div class="md:w-1/3 bg-gradient-to-br from-hotel-gold to-hotel-expresso p-10 text-white flex flex-col justify-between">
+
+        <div>
+          <h2 class="text-2xl font-bold mb-4">Why Stay With Us?</h2>
+
+          <ul class="space-y-4">
+            <li class="flex items-start">✔ Comfortable luxury rooms</li>
+            <li class="flex items-start">✔ Free Wi-Fi & breakfast</li>
+            <li class="flex items-start">✔ 24/7 customer support</li>
+            <li class="flex items-start">✔ Secure parking</li>
+          </ul>
+        </div>
+
+        <div class="mt-8">
+          <h3 class="text-lg font-semibold mb-2">Need assistance?</h3>
+          <p class="text-white mb-2">Call us at +234 123 456 7890</p>
+          <p class="text-sm text-white">Available 24/7</p>
+        </div>
+
+      </div>
+
+      <!-- Booking Form -->
+      <div class="md:w-2/3 p-10">
+
+        <form class="space-y-6" id="actualBookingForm">
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- Name -->
+            <div>
+              <label class="block text-sm font-medium mb-1">Full Name</label>
+              <input type="text" class="w-full px-4 py-3 border rounded-lg" placeholder="John Doe" required>
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label class="block text-sm font-medium mb-1">Email</label>
+              <input type="email" class="w-full px-4 py-3 border rounded-lg" placeholder="john@email.com" required>
+            </div>
+
+            <!-- Phone -->
+            <div>
+              <label class="block text-sm font-medium mb-1">Phone Number</label>
+              <input type="tel" class="w-full px-4 py-3 border rounded-lg" placeholder="+234..." required>
+            </div>
+
+            <!-- Room Type -->
+            <div>
+              <label class="block text-sm font-medium mb-1">Room Type</label>
+              <select class="w-full px-4 py-3 border rounded-lg bg-white" required>
+                <option value="">Select Room</option>
+                <option>Standard Room</option>
+                <option>Deluxe Room</option>
+                <option>Executive Suite</option>
+                <option>Family Room</option>
+              </select>
+            </div>
+
+            <!-- Check In -->
+            <div>
+              <label class="block text-sm font-medium mb-1">Check-In Date</label>
+              <input type="date" class="w-full px-4 py-3 border rounded-lg" required>
+            </div>
+
+            <!-- Check Out -->
+            <div>
+              <label class="block text-sm font-medium mb-1">Check-Out Date</label>
+              <input type="date" class="w-full px-4 py-3 border rounded-lg" required>
+            </div>
+
+          </div>
+
+          <!-- Special Requests -->
+          <div>
+            <label class="block text-sm font-medium mb-1">Special Requests</label>
+            <textarea rows="4" class="w-full px-4 py-3 border rounded-lg" placeholder="Any special needs..."></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button class="w-full py-3 bg-hotel-expresso text-white rounded-lg hover:bg-amber-400 transition">
+            Book Now
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+   <!-- === FOOTER === -->
+  <footer id="footer" class="bg-hotel-expresso text-gray-300 py-16 px-6 md:px-12 lg:px-24">
+        
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16 border-b border-zinc-800 pb-16">
+        
+        <div class="space-y-6">
+            <h2 class="text-amber-500 text-3xl font-black tracking-tighter">AMBIENCE</h2>
+            <p class="text-zinc-400 text-lg max-w-md leading-relaxed">
+                Experience the unparalleled comfort and soothing environment of our five-star hotel. 
+                Dedicated to giving you the absolute best in hospitality and culture since 1999.
+            </p>
+            <div class="space-y-3 pt-6 border-t border-zinc-800">
+                <p class="font-bold text-white uppercase tracking-widest text-xs">Contact Information</p>
+                <p class="flex items-center gap-2">Email: <span class="text-zinc-100">info@ambiencehotel.com</span></p>
+                <p class="flex items-center gap-2">Phone: <span class="text-zinc-100">+234 123 456 7890</span></p>
+                <p class="flex items-center gap-2">Address: <span class="text-zinc-100">Middle Island, Lagos, Nigeria</span></p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-white font-bold mb-6 text-lg">Programmes</h3>
+                <ul class="space-y-4 text-zinc-400">
+                    <li><a href="#" class="hover:text-amber-500 transition-colors">Events</a></li>
+                    <li><a href="#" class="hover:text-amber-500 transition-colors">Awards</a></li>
+                    <li><a href="#" class="hover:text-amber-500 transition-colors">Weddings</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-6 text-lg">Support</h3>
+                <ul class="space-y-4 text-zinc-400">
+                    <li><a href="#" class="hover:text-amber-500 transition-colors">FAQ</a></li>
+                    <li><a href="#" class="hover:text-amber-500 transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-amber-500 transition-colors">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="w-full">
+        <div class="text-center md:text-left mb-10">
+            <h3 class="text-2xl font-bold text-white">Send Us a Mail</h3>
+            <p class="text-zinc-500 mt-2">Have questions? Our concierge is ready to assist you.</p>
+        </div>
+        
+        <form class="space-y-6 w-full" id="contactForm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input type="text" placeholder="Full Name" required
+                    class="w-full bg-zinc-800 border border-zinc-700 p-4 rounded-lg focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all text-white placeholder-zinc-500">
+                <input type="email" placeholder="Email Address" required
+                    class="w-full bg-zinc-800 border border-zinc-700 p-4 rounded-lg focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all text-white placeholder-zinc-500">
+            </div>
+            
+            <div class="w-full">
+                <label for="message" class="block mb-3 text-sm font-medium text-zinc-400 uppercase tracking-widest">Your Message</label>
+                <textarea 
+                    id="message" 
+                    rows="6"
+                    required
+                    class="w-full bg-zinc-800 border border-zinc-700 p-5 rounded-lg focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all text-white placeholder-zinc-500 resize-y"
+                    placeholder="How can we help you?"></textarea>
+            </div>
+
+            <div class="flex justify-center md:justify-start">
+                <button type="submit" onclick="openModal()"
+                    class="bg-amber-600 hover:bg-amber-500 text-white px-16 py-4 font-bold rounded-full transition-all shadow-xl hover:scale-105 active:scale-95 uppercase tracking-widest text-sm">
+                    Send Message
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="mt-20 pt-8 border-t border-zinc-800 text-center text-xs text-zinc-500 uppercase tracking-widest">
+        <p>&copy; 2026 Ambience Hotel and Resort. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+   <!-- Success Modal -->
+   <div id="successModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-80">
+
+    <div class="bg-white rounded-xl p-8 max-w-md w-full text-center">
+  
+      <h2 class="text-2xl font-bold mb-3">Booking Successful 🎉</h2>
+  
+      <p class="text-gray-600 mb-6">
+        Your reservation request has been submitted. We will contact you shortly.
+      </p>
+  
+      <button onclick="closeModal()" class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700">
+        Close
+      </button>
+  
+    </div>
+  </div>
+
+  
+  <script>
+    // --- NAVIGATION LOGIC ---
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const topRow = document.getElementById('hamburger-top');
+    const middleRow = document.getElementById('hamburger-middle');
+    const bottomRow = document.getElementById('hamburger-bottom');
+
+    function toggleMenu() {
+        // Slide menu
+        menu.classList.toggle('-translate-y-full');
+        menu.classList.toggle('translate-y-0');
+
+        // Transform Hamburger to X
+        topRow.classList.toggle('rotate-45');
+        topRow.classList.toggle('translate-y-[10px]');
+        topRow.classList.toggle('bg-amber-500');
+        
+        middleRow.classList.toggle('opacity-0');
+        
+        bottomRow.classList.toggle('-rotate-45');
+        bottomRow.classList.toggle('-translate-y-[10px]');
+        bottomRow.classList.toggle('bg-amber-500');
+        
+        document.body.classList.toggle('overflow-hidden');
+    }
+
+    btn.addEventListener('click', toggleMenu);
+
+    // Close menu when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (menu.classList.contains('translate-y-0')) {
+                toggleMenu();
+            }
+        });
+    });
+
+    // --- FORM & MODAL LOGIC ---
+    
+    /**
+     * Generic function to validate any form and show the success modal
+     * @param {string} formId - The ID of the form to validate
+     */
+    function processForm(event, formId) {
+        // Prevent actual page reload/submission
+        event.preventDefault();
+
+        const form = document.getElementById(formId);
+        const modal = document.getElementById("successModal");
+        let isValid = true;
+
+        // Select all required inputs within this specific form
+        const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+
+        inputs.forEach(input => {
+            if (!input.value.trim()) {
+                input.classList.add("border-red-500", "ring-1", "ring-red-500");
+                isValid = false;
+            } else {
+                input.classList.remove("border-red-500", "ring-1", "ring-red-500");
+            }
+        });
+
+        if (isValid) {
+            // Show modal (using flex to ensure centering)
+            modal.classList.remove("hidden");
+            modal.classList.add("flex"); 
+            
+            // Optional: Reset form after success
+            form.reset();
+        }
+    }
+
+    // Modal Close Function
+    function closeModal() {
+        const modal = document.getElementById("successModal");
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+    }
+
+    // Event Listeners for Forms
+    // This attaches logic to the forms without needing inline 'onclick'
+    document.addEventListener('DOMContentLoaded', () => {
+        const bookingForm = document.getElementById('actualBookingForm');
+        const contactForm = document.getElementById('contactForm');
+
+        if(bookingForm) {
+            bookingForm.addEventListener('submit', (e) => processForm(e, 'actualBookingForm'));
+        }
+
+        if(contactForm) {
+            contactForm.addEventListener('submit', (e) => processForm(e, 'contactForm'));
+        }
+    });
+
+  </script>
+</body>
+</html>

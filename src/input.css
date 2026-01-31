@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* Custom Professional Styles */
+@theme {
+  --color-hotel-gold: #E9A825;
+  --color-hotel-expresso: #2c1e1a;
+  --color-hotel-leather: #8B4513;
+  --color-hotel-cream: #F9F7F2;
+}
+
+html {
+  Scroll-behavior: smooth;
+}
+
+  @layer base {
+    html {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, .font-serif {
+      font-family: 'Playfair Display', serif;
+    }
+  }
+
+@layer components {
+   .nav-link {
+     @apply font-sans transition-all duration-300 ease-in-out cursor-pointer relative;
+     @apply text-gray-300 hover:text-amber-500;
+   }
+
+   .nav-link::after {
+       content: '';
+       @apply absolute left-0 bottom-[-5px] w-0 h-[2px] bg-amber-500 transition-all 
+       duration-400;
+   }
+   .nav-link:hover::after {
+       @apply w-full;
+   }
+
+   /* The "X" close utton visility fix */
+      .hamburger-active {
+         @apply bg-amber-500;
+      }
+}
+
